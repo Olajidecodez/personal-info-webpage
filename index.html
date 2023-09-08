@@ -8,18 +8,33 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <section class="slackDisplayImage">
+            <img id="slackDisplayImage" src="Olajide.jpg" alt="Olajide_" data-testid="slackDisplayImage">
+        </section>
+         
+        <section class="slackName">
+           <p>Slack Name: <span id="slackUserName" data-testid="slackUserName"></span></p>
+        </section>
+         
+        <section class="currentDayOfTheWeek">  
+          <p>Current Day of the week: <span id="currentDayOfTheWeek" data-testid="currentDayOfTheWeek"> 
+            </span>
+          </p>
+        </section>
 
-        <p>Slack Name: <span id="slackUserName" data-testid="slackUserName"></span></p>
+        <section class="currentUTCTime">
+           <p>Current UTC Time: <span id="currentUTCTime" data-testid="currentUTCTime"></span></p>
+        </section>
 
-        <img id="slackDisplayImage" src="Olajide.jpg" alt="Olajide_" data-testid="slackDisplayImage">
+        <section class="myTrack">
+            <p>Track: <span id="myTrack" data-testid="myTrack"></span></p>
+        </section>
         
-        <p>Current Day of the week: <span id="currentDayOfTheWeek" data-testid="currentDayOfTheWeek"></span></p>
+        <section class="githubURL">
+          <p>Github URL: <a id="githubURL" href="https://github.com/Olajidecodez/personal-info-webpage" 
+            data-testid="githubURL">Visit My GitHub Repository</p>
+        </section>
 
-        <p>Current UTC Time: <span id="currentUTCTime" data-testid="currentUTCTime"></span></p>
-
-        <p>Track: <span id="myTrack" data-testid="myTrack"></span></p>
-
-        <p>Github URL: <span id="githubURL" data-testid="githubURL"></span></p>
         <script src="script.js"></script>
     </body>
 </html>
