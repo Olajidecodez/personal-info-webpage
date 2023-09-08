@@ -13,10 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const dayIndex = currentDate.getDay();
   currentDayOfTheWeek.textContent = daysOfWeek[dayIndex];
   
+  function updateUTCTime() {
   const currentUTCTime = document.getElementById('currentUTCTime');
   const utcMilliseconds = Date.now();
   currentUTCTime.textContent = utcMilliseconds;
-  
+  }
+
+  updateUTCTime();
+  setInterval(updateUTCTime, 1000);
 
   const myTrack = document.getElementById('myTrack');
   myTrack.textContent = 'Frontend';
@@ -24,4 +28,4 @@ document.addEventListener('DOMContentLoaded', function() {
   const githubURL = document.getElementById('githubURL');
   githubURL.href = 'https://github.com/Olajidecodez/personal-info-webpage';
 
-})
+});
